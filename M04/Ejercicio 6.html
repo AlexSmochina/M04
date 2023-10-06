@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta acharset="UTF-8">
+        <title>Ejercicio 6</title>
+    </head>
+    <body>
+        <form action="" method="Post" enctype="multipart/form-data" >
+        <fieldset>
+            <legend>Ficha de la pelicula</legend>
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo"><br>
+            <label for="director">Director</label>
+            <input type="text" name="director"><br>
+            <label for="fecha">Fecha de estreno:</label>
+            <input type="date" name="fecha"><br>
+            <label for="poster">Póster:</label>
+            <input type="file" name="poster"><br>
+            <label for="version">Versión:</label><br>
+            <input type="checkbox" name="version"> IMAX
+            <input type="checkbox" name="version"> 3D
+            <input type="checkbox" name="version"> Full HD<br>
+            <label for="clasificacion">Clasificacón:</label><br>
+            <input type="checkbox" name="clasificacion"> TP
+            <input type="checkbox" name="clasificacion"> +12
+            <input type="checkbox" name="clasificacion"> +15
+            <input type="checkbox" name="clasificacion"> +18
+        </fieldset>
+        <fieldset>
+            <legend>Ficha de proyección</legend>
+            <label for="sala">Sala:</label>
+            <input type="text" name="sala"><br>
+            <textarea rows="7" cols="50" placeholder="Escribe una breve sinopsis"></textarea><br>
+            <select>
+                <option>Ingles</option>
+                <option>Español</option>
+                <option>Rumano</option>
+                <option>Italiano</option>
+            </select><br>
+            <label for="sesion">Sesión:</label>
+            <input type="time" name="sesion"><br>
+            <label for="dias">Días de proyección:</label><br>
+            <select multiple name="dias" size="5">
+                <option>Lunes</option>
+                <option>Martes</option>
+                <option>Miercoles</option>
+                <option>Jueves</option>
+                <option>Viernes</option>
+            </select><br>
+            <label for="color">Elige un color de fondo:</label>
+            <input type="color" name="color"><br>
+            <label for="puntuacion">Puntuación del público:</label>
+            <progress id="puntuacion" value="75" max="100"> 75% </progress>
+        </fieldset>
+        </form>
+    </body>
+</html>
